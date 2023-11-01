@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: pixel1;
+    src: url(../../fonts/04B_30__.TTF);
+}
+
+@font-face {
+    font-family: pixel2;
+    src: url(../../fonts/rainyhearts.ttf);
+}
+
+body {
+    min-height: 100vh;
+    max-height: 100%;
+    margin: 0px;
+    background-image: url(imagens/wallpaper-main.png);
+    background: fill;
+    position: relative;
+    overflow: hidden;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 38px;
+}
+
+div#backbutton {
+    width: fit-content;
+    padding-bottom: 30px;
+    font-family: pixel1;
+    display: inline-block;
+}
+
+div#backbutton > a {
+    padding: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+div#morebutton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: fit-content;
+    padding-bottom: 30px;
+    font-family: pixel1;
+    display: inline;
+}
+
+div#morebutton > a {
+    padding: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(58, 58, 58, 0.712);
+    margin: auto;
+}
+
+footer > p {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+    font-family: pixel2;
+}
+
+div#menu {
+    margin: auto;
+    border-radius: 100px;
+    max-width: 70%;
+    padding: 40px 15px;
+    background-color: rgba(255, 255, 255, 0.363);
+}
+
+div#menu > h1 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: pixel1;
+    font-size: 40px;
+}
+
+div#category {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 15%;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border-style: groove;
+    border-color: black;
+    min-width: 100px;
+    max-width: 450px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.432);
+}
+
+div#category > img {
+    height: 150px;
+    max-width: 150px;
+    width: auto;
+    position: absolute;
+    border-right: 2px solid black; 
+}
+
+div#category > p {
+    font-family: pixel2;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 170px; 
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) { 
+    div#menu {
+        max-width: 90%;
+        padding: 20px 10px;
+    }
+
+    div#category {
+        margin-left: 5%;
+        max-width: 350px;
+        height: 100px;
+    }
+
+    div#category > img {
+        height: 100px;
+        max-width: 100px;
+    }
+
+    div#category > p {
+        font-size: 30px;
+        margin-left: 120px; 
+    }
+}
