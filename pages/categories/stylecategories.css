@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     max-height: 100%;
     margin: 0px;
-    background-image: url(imagens/wallpaper-main.png);
+    background-image: url(../../imagens/wallpaper.png);
     background: fill;
     position: relative;
     overflow: hidden;
@@ -81,6 +81,11 @@ div#menu {
     max-width: 70%;
     padding: 40px 15px;
     background-color: rgba(255, 255, 255, 0.363);
+}
+
+div#menu > a {
+    text-decoration: none;
+    color: black;
 }
 
 div#menu > h1 {
